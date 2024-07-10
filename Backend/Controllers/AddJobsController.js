@@ -2,7 +2,7 @@ const express = require('express')
 const Careers = require('../Models/Careers')
 
 const addJobsController = async(req,res)=>{
-    const {title,description,numberofOpenings, qualifications,experience,salary} = req.body
+    const {title,description,numberofOpenings, qualifications,experience,salary,categoriesd} = req.body
     try{
         const response = await Careers.create({
             title:title,
@@ -10,13 +10,14 @@ const addJobsController = async(req,res)=>{
             numberofOpenings:numberofOpenings,
             qualifications:qualifications,
             experience:experience,
-            salary:salary
+            salary:salary,
+            categoriesd:categoriesd
         })
         const result = await response.save()
         res.status(201).json({message:"The Data has been successfully saved"})
     }
     catch(err){
-        res.status(500).json({message:"Internal Server Error"})
+        res.status(500).json(err)
     }
 }
 
