@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const AddProjectController = require('../controllers/AddProjectController');
+const AddProjectController = require('../Controllers/AddProjectController');
 const upload = require('../Middleware/Multer');
 
 router.post('/addproject', upload.fields([
