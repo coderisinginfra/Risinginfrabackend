@@ -9,7 +9,7 @@ const careersschema = mongoose.Schema({
             type: String,
             required:true
         },
-        category:{
+        categoriesd:{
             type: String,
             required:true
         },
