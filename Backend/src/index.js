@@ -101,6 +101,9 @@ app.use("/api/v1",AyodhyaPropertyRouter)
 const FetchResumeRouter = require('../Routers/FetchResumeRouter')
 app.use("/api/v1",FetchResumeRouter)
 
+const UserSubmit = require('../Routers/UserSubmit')
+app.use("/api",UserSubmit)
+
 
 const signup = require('../Routers/SignupRouter')
 app.use("/api/v1",signup)
