@@ -97,6 +97,8 @@ const GurugramPropertyRouter = require('../Routers/GurugrmPropertyRouter')
 app.use("/api/v1",GurugramPropertyRouter)
 const AyodhyaPropertyRouter = require('../Routers/AyodhyaPropertyRouter')
 app.use("/api/v1",AyodhyaPropertyRouter)
+const GhaziabadRouter = require('../Routers/GhaziabadRouter')
+app.use("/api/v1",GhaziabadRouter)
 
 const FetchResumeRouter = require('../Routers/FetchResumeRouter')
 app.use("/api/v1",FetchResumeRouter)
