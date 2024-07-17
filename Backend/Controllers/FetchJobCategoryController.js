@@ -6,14 +6,14 @@ const FetchJobCategoryConroller = async(req,res) =>{
         const categories = await Careers.aggregate([
             {
                 $group: {
-                    _id: '$category',
+                    _id: '$categoriesd',
                     count: { $sum: 1 }
                 }
             },
             {
                 $project: {
                     _id: 0,
-                    category: '$_id',
+                    categoriesd: '$_id',
                     count: 1
                 }
             }
