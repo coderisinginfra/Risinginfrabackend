@@ -5,10 +5,6 @@ const upload = require('../Middleware/Multer');
 
 const ApplyNowController = async (req, res) => {
     const { name, email, phoneNumber, categoriesd } = req.body;
-    
-    if (!req.file) {
-        return res.status(400).json({ Message: "No file uploaded" });
-    }
 
     try {
         const responses = await ApplyNowModel.findOne({email:email})
