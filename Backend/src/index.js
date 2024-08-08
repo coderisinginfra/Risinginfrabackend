@@ -106,6 +106,8 @@ app.use("/api/v1",FetchResumeRouter)
 const UserSubmit = require('../Routers/UserSubmit')
 app.use("/api",UserSubmit)
 
+const NayaashiyanaRouter = require('../Routers/NayaashiyanaRouter')
+app.use("/api/v1",NayaashiyanaRouter)
 
 const signup = require('../Routers/SignupRouter')
 app.use("/api/v1",signup)
