@@ -3,13 +3,14 @@ const EventAddModel = require('../Models/EventAddModel')
 const cloudinary = require('../Helpers/Cloudinary');
 const upload = require('../Middleware/Multer');
 const EventAddController = async(req,res)=>{
-    const {title,eventDate,eventsdescription} = req.body
+    const {title,eventDate,eventsdescription,eventLocation} = req.body
     try {
         const uploadResult = await cloudinary.uploader.upload(req.file.path);
         const response = await EventAddModel.create({
             title:title,
             eventDate:eventDate,
             eventsdescription:eventsdescription,
+            eventLocation: eventLocation,
             eventLinks:uploadResult.url
         })
         const result = await response.save()

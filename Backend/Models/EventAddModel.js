@@ -9,6 +9,10 @@ const EventAddSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    eventLocation:{
+        type:String,
+        required:true
+    },
     eventsdescription:{
         type:String,
         required:true
