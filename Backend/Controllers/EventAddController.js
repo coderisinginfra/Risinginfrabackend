@@ -13,7 +13,7 @@ const EventAddController = async(req,res)=>{
             eventLinks:uploadResult.url
         })
         const result = await response.save()
-        res.status(200).json(result)
+        res.status(201).json({message:`Event Add Successfully ${result}`})
     } catch (error) {
         res.status(500).json({message:"invalid credential"})
     }
