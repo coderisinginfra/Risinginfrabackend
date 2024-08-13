@@ -81,6 +81,8 @@ app.use("/api/v1",AddTeamMemberRouter)
 const FetchTeammemberRouter = require('../Routers/FetchTeamMemberRouter')
 app.use("/api/v1",FetchTeammemberRouter)
 
+const EventAddRouter = require('../Routers/EventAddRouter')
+app.use("/api/v1",EventAddRouter)
 
 const FetchBlogByIdRouter = require('../Routers/FetchBlogByIdRouter')
 app.use("/api/v1",FetchBlogByIdRouter)
