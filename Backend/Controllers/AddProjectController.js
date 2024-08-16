@@ -4,7 +4,7 @@ const upload = require('../Middleware/Multer');
 
 const AddProjectController = async (req, res) => {
     const {
-        propertyTitle, category, projectType, developer, city, location, sitelocation, size, price, amenties, content, featuredproject, prelease
+        propertyTitle, category, projectType, developer, city, location, sitelocation, size, price, keywords, amenties, content, featuredproject, prelease
     } = req.body;
 
     try {
@@ -45,6 +45,7 @@ const AddProjectController = async (req, res) => {
             content,
             featuredproject,
             prelease,
+            keywords,
             images,
             floorplan1,
             floorplan2,

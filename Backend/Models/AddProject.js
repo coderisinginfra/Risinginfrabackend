@@ -72,6 +72,10 @@ const AddProjectschema = mongoose.Schema({
         type:String,
         required: true
     },
+    keywords:{
+        type:String,
+        required:true
+    },
     date:{
         type: Date,
         default: Date.now()
