@@ -120,6 +120,9 @@ app.use("/api/v1",signup)
 const login = require('../Routers/LoginRouter')
 app.use("/api/v1",login)
 
+// Fetch Projects developers 
+const BhutaniFetchRouter = require('../Routers/BhutaniFetchRouter')
+app.use("/api/v1",BhutaniFetchRouter)
 
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
