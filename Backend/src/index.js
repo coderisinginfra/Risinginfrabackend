@@ -133,6 +133,15 @@ app.use("/api/v1",GyGyGroupRouter)
 const AceGroupFetchRouter = require('../Routers/AceGroupFetchRouter')
 app.use("/api/v1",AceGroupFetchRouter)
 
+const ParasGroupRouter = require('../Routers/ParasGroupRouter')
+app.use("/api/v1",ParasGroupRouter)
+
+const CrcGroupFetchRouter = require('../Routers/CrcGroupFetchRouter')
+app.use("/api/v1",CrcGroupFetchRouter)
+
+const FairFoxGroupFetchRouter = require('../Routers/FairFoxGroupFetchRouter')
+app.use("/api/v1",FairFoxGroupFetchRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
