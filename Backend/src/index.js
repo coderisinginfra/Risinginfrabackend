@@ -124,6 +124,15 @@ app.use("/api/v1",login)
 const BhutaniFetchRouter = require('../Routers/BhutaniFetchRouter')
 app.use("/api/v1",BhutaniFetchRouter)
 
+const GaurFetchRouter = require('../Routers/GaurFetchRouter')
+app.use("/api/v1",GaurFetchRouter)
+
+const GyGyGroupRouter = require('../Routers/GyGyGroupFetchRouter')
+app.use("/api/v1",GyGyGroupRouter)
+
+const AceGroupFetchRouter = require('../Routers/AceGroupFetchRouter')
+app.use("/api/v1",AceGroupFetchRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
