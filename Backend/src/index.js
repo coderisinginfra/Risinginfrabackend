@@ -145,6 +145,9 @@ app.use("/api/v1",FairFoxGroupFetchRouter)
 const FetchContactRouter = require('../Routers/FetchContactRouter')
 app.use("/api/v1",FetchContactRouter)
 
+const FetchPopupRouter = require('../Routers/FetchPopupRouter')
+app.use("/api/v1",FetchPopupRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
