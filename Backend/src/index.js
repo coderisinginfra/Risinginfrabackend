@@ -151,6 +151,9 @@ app.use("/api/v1",FetchPopupRouter)
 const FetchBlogReviewRouter = require('../Routers/FetchBlogReviewRouter')
 app.use("/api/v1",FetchBlogReviewRouter)
 
+const FetchUserSubmitRouter = require('../Routers/FetchUserSubmitRouter')
+app.use("/api/v1",FetchUserSubmitRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
