@@ -5,9 +5,11 @@ const FetchTeamMember = async (req, res) => {
     try {
         // Define the hierarchy in the required order
         const designationOrder = [
-            "Chief Executive Officer",
+            "Founder and CEO",
+            "Director",
             "President of Sales",
             "Vice President of Sales",
+            "Leasing Heads",
             "Director Of Marketing",
             "SR. HR Manager",
             "HR Manager",
