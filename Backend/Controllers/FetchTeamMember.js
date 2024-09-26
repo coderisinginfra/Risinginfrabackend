@@ -15,7 +15,7 @@ const FetchTeamMember = async (req, res) => {
             "Leasing Head",
             "Sales Manager",
             "Senior Sales Manager",
-            "Software Development Engineer",
+            "Software Developer",
             "Graphic Designer"
         ];
 
