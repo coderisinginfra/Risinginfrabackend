@@ -13,6 +13,10 @@ const farmhouseschema = mongoose.Schema({
         type:String,
         require: true
     },
+    message:{
+        type:String,
+        require: true
+    },
     submitdate:{
         type: Date,
         default: Date.now()

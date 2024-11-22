@@ -3,14 +3,15 @@ const FarmhouseModel = require('../Models/FarmhouseModel');
 
 const FarmhouseController = async (req, res) => {
     try {
-        const { name, email, phoneNumber } = req.body;
+        const { name, email, phoneNumber, message } = req.body;
         const response = await FarmhouseModel.findOne({ email });
 
         if (!response) {
             const result = await FarmhouseModel.create({
                 name: name,
                 email: email,
-                phoneNumber: phoneNumber
+                phoneNumber: phoneNumber,
+                message: message
             });
 
             const data = await result.save();
