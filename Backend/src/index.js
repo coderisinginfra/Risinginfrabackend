@@ -157,6 +157,9 @@ app.use("/api/v1",FetchUserSubmitRouter)
 const FetchNayaashiyanaRouter = require("../Routers/FetchNayaashiyanaRouter")
 app.use("/api/v1",FetchNayaashiyanaRouter)
 
+const FarmhouseRouter = require('../Routers/FarmhouseRouter')
+app.use("/api/v1",FarmhouseRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
