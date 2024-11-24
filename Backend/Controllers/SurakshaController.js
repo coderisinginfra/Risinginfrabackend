@@ -1,7 +1,7 @@
 const express = require('express')
 const SurakshaModel = require('../Models/SurakshaModel')
 
-const SurakshaController = async(req,req) =>{
+const SurakshaController = async(req,res) =>{
     const {name,PhoneNumber, Email} = req.body
     try {
         const response = await SurakshaModel.create({
