@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const SurakshaSchema = mongoose.Schema({
+const BhutaniSchema = mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -19,5 +19,5 @@ const SurakshaSchema = mongoose.Schema({
     }
 })
 
-const SurakshaModel = mongoose.model("SurakshaModel",SurakshaSchema)
-module.exports = SurakshaModel
+const BhutaniModel = mongoose.model("BhutaniModel",BhutaniSchema)
+module.exports = BhutaniModel

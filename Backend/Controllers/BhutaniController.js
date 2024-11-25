@@ -1,10 +1,10 @@
 const express = require('express')
-const SurakshaModel = require('../Models/SurakshaModel')
+const BhutaniModel = require('../Models/BhutaniModel')
 
-const SurakshaController = async(req,res) =>{
+const BhutaniController = async(req,res) =>{
     const {name,PhoneNumber, Email} = req.body
     try {
-        const response = await SurakshaModel.create({
+        const response = await BhutaniModel.create({
             name:name,
             PhoneNumber:PhoneNumber,
             Email:Email
@@ -15,4 +15,4 @@ const SurakshaController = async(req,res) =>{
         res.status(500).json({message:"Invalid Creadential"})
     }
 }
-module.exports = SurakshaController
+module.exports = BhutaniController

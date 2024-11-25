@@ -160,8 +160,8 @@ app.use("/api/v1",FetchNayaashiyanaRouter)
 const FarmhouseRouter = require('../Routers/FarmhouseRouter')
 app.use("/api/v1",FarmhouseRouter)
 
-const Surakshaenclave = require('../Routers/Suralkshaenclave')
-app.use("/app/v1", Surakshaenclave)
+const BhutaniRouter = require('../Routers/BhutaniRouter')
+app.use("/app/v1", BhutaniRouter)
 
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
