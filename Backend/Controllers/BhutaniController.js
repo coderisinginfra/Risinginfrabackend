@@ -2,7 +2,7 @@ const express = require('express')
 const BhutaniModel = require('../Models/BhutaniModel')
 
 const BhutaniController = async(req,res) =>{
-    const {name,PhoneNumber, Email} = req.body
+    const {name,PhoneNumber, Email, message} = req.body
     try {
         const response = await BhutaniModel.create({
             name:name,
