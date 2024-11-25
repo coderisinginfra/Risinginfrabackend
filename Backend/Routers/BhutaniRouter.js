@@ -1,5 +1,5 @@
 const express = require('express')
 const BhutaniController = require('../Controllers/BhutaniController')
 const router = express.Router()
-router.post("/bhutani",BhutaniController)
+router.post("/bhutanicitycenter32",BhutaniController)
 module.exports = router
