@@ -7,7 +7,8 @@ const BhutaniController = async(req,res) =>{
         const response = await BhutaniModel.create({
             name:name,
             PhoneNumber:PhoneNumber,
-            Email:Email
+            Email:Email,
+            message:message
         })
         const result = await response.save()
         res.status(200).json(result)
