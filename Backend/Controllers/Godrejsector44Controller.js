@@ -1,5 +1,5 @@
 const express = require('express')
-const BhutaniModel = require('../Models/BhutaniModel')
+const Godrejsector44Model = require('../Models/BhutaniModel')
 
 const Godrejsector44Controller = async(req,res) =>{
     const {name,PhoneNumber, Email} = req.body
