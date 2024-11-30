@@ -164,7 +164,7 @@ const BhutaniRouter = require('../Routers/BhutaniRouter')
 app.use("/app/v1", BhutaniRouter)
 
 const Godrejsector44Router = require('../Routers/Godrejsector44Router')
-app.use("/app/v1", Godrejsector44Router)
+app.use("/api/v1", Godrejsector44Router)
 
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
