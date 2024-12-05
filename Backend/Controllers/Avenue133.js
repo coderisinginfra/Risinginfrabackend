@@ -2,7 +2,7 @@ const express = require('express')
 const Avenue133Model = require('../Models/Avenue133Models')
 
 const Avenue133 = async(req,res)=>{
-    const {name,phoneNumber,email} = req.body
+    const { name,phoneNumber,email } = req.body
     try {
         const result = await Avenue133Model.create({
             name:name,
