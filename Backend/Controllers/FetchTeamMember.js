@@ -8,6 +8,7 @@ const FetchTeamMember = async (req, res) => {
             "Founder and CEO",
             "Director",
             "Assistent Director",
+            "GM Sales",
             "Additional Director",
             "Director Of Marketing",
             "SR. HR Manager",
