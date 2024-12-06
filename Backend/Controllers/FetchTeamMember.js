@@ -7,8 +7,8 @@ const FetchTeamMember = async (req, res) => {
         const designationOrder = [
             "Founder and CEO",
             "Director",
-            "President of Sales",
-            "Vice President of Sales",
+            "Assistent Director",
+            "Additional Director",
             "Director Of Marketing",
             "SR. HR Manager",
             "HR Manager",
