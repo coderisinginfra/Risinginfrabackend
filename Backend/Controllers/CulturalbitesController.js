@@ -7,7 +7,8 @@ const CulturalbitesController = async(req, res) =>{
         const result = await culturalbites({
             name:name,
             email: email,
-            phoneNumber: phoneNumber
+            phoneNumber: phoneNumber,
+            message:message
         })
         const response = await result.save()
         res.status(200).json(response)
