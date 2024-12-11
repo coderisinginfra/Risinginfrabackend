@@ -1,7 +1,7 @@
 const express = require('express')
 const culturalbites = require('../Models/Culturalbites')
 
-const culturalbites = async(req, res) =>{
+const CulturalbitesController = async(req, res) =>{
   const  { name, email, phoneNumber } = req.body
     try {
         const result = await culturalbites({
@@ -16,4 +16,4 @@ const culturalbites = async(req, res) =>{
     }
 }
 
-module.exports = culturalbites
+module.exports = CulturalbitesController

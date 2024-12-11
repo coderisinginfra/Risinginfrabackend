@@ -169,8 +169,8 @@ app.use("/api/v1", Godrejsector44Router)
 const Avenue133Router = require('../Routers/Avenue133Router')
 app.use("/api/v1", Avenue133Router)
 
-const culturalbites = require('../Routers/CulturalbitesRouter')
-app.use("/api/v1", culturalbites)
+const culturalbitesRouter = require('../Routers/CulturalbitesRouter')
+app.use("/api/v1", culturalbitesRouter)
 
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
