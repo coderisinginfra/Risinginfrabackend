@@ -19,5 +19,5 @@ const culturalbites = mongoose.Schema({
     }
 })
 
-const culturalbitesmodal = mongoose.modal("culturalbitesmodal",culturalbites)
+const culturalbitesmodal = mongoose.model("culturalbitesmodal",culturalbites)
 module.exports = culturalbitesmodal
