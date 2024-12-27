@@ -172,6 +172,12 @@ app.use("/api/v1", Avenue133Router)
 const culturalbitesRouter = require('../Routers/CulturalbitesRouter')
 app.use("/api/v1", culturalbitesRouter)
 
+const PearlRouter = require('../Routers/PearlRouter')
+app.use("/api/v1", PearlRouter)
+
+const Delhi6Router = require('../Routers/Delhi6Router')
+app.use("/api/v1", Delhi6Router)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
