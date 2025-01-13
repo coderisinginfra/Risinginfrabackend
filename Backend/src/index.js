@@ -178,6 +178,9 @@ app.use("/api/v1", PearlRouter)
 const Delhi6Router = require('../Routers/Delhi6Router')
 app.use("/api/v1", Delhi6Router)
 
+const SurakshaenclaveRouter = require('../Routers/SurakshaenclaveRouter')
+app.use("/api/v1", SurakshaenclaveRouter)
+
 mongoose.connect(url)
 .then(()=>console.log('mongoDB has been connected'))
 .catch(()=>console.log("MongoDB gives an Error"))
